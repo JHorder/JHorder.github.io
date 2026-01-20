@@ -351,6 +351,139 @@ section {
     text-decoration: underline;
 }
 
+/* CV Section */
+.cv {
+    background-color: white;
+}
+
+.cv-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.cv-content h2 {
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    margin: 2rem 0 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--border-color);
+}
+
+.cv-content h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin: 1.5rem 0 0.5rem;
+}
+
+.cv-content h4 {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.cv-content p, .cv-content ul {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.cv-content ul {
+    padding-left: 2rem;
+}
+
+.cv-content a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.cv-content a:hover {
+    text-decoration: underline;
+}
+
+.cv-content hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
+/* Blog Section */
+.blog {
+    background-color: var(--light-color);
+}
+
+.blog-content {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.blog-post {
+    background-color: white;
+    padding: 2.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.blog-post h2 {
+    color: var(--dark-color);
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.blog-post h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.blog-post h4 {
+    color: var(--dark-color);
+    font-size: 1.1rem;
+    margin: 1rem 0 0.5rem;
+}
+
+.blog-post p {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+}
+
+.blog-post ul, .blog-post ol {
+    color: var(--text-color);
+    line-height: 1.8;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
+}
+
+.blog-post a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.blog-post a:hover {
+    text-decoration: underline;
+}
+
+.blog-post pre {
+    background-color: var(--dark-color);
+    color: #f8f8f2;
+    padding: 1.5rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    margin: 1rem 0;
+}
+
+.blog-post code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.9rem;
+}
+
+.blog-post hr {
+    margin: 2rem 0;
+    border: none;
+    border-top: 1px solid var(--border-color);
+}
+
 /* Contact Section */
 .contact {
     background-color: white;
