@@ -5,26 +5,27 @@ Portfolio website for Joseph Horder - Bioinformatician and Computational Biologi
 ## Structure
 
 ```
-├── index.html          # Main HTML structure
-├── styles.css          # Styling and responsive design
-├── script.js           # JavaScript for content loading and interactivity
-├── about.md            # About section content
-├── projects.md         # Projects showcase
-├── publications.md     # Publications and presentations
-├── cv.md               # Curriculum vitae
-├── blog.md             # Project blog posts
-└── README.md           # This file
+├── docs/
+│   ├── index.html          # Main HTML structure
+│   ├── styles.css          # Styling and responsive design
+│   ├── script.js           # JavaScript for content loading and interactivity
+│   ├── about.md            # About section content
+│   ├── projects.md         # Projects showcase
+│   ├── publications.md     # Publications and presentations
+│   ├── cv.md               # Curriculum vitae
+│   └── blog.md             # Project blog posts
+└── README.md               # This file
 ```
 
 ## Editing Content
 
-All content is managed through markdown files in the root directory. Simply edit the `.md` files to update your portfolio.
+All content is managed through markdown files in the `docs/` directory. Simply edit the `.md` files to update your portfolio.
 
 ### About Section
-Edit `about.md` using markdown formatting. Write about your background, research interests, and expertise.
+Edit `docs/about.md` using markdown formatting. Write about your background, research interests, and expertise.
 
 ### Projects
-Edit `projects.md` following this format:
+Edit `docs/projects.md` following this format:
 ```markdown
 ## Project Title
 **Tags:** Python, NGS, Machine Learning
@@ -36,7 +37,7 @@ Project description here explaining the problem, your approach, and results.
 ```
 
 ### Publications
-Edit `publications.md` following this format:
+Edit `docs/publications.md` following this format:
 ```markdown
 ## Publication Title
 **Authors:** Author1, **Your Name**, Author3
@@ -49,10 +50,10 @@ Brief description of the work and your contribution.
 ```
 
 ### CV
-Edit `cv.md` with your full curriculum vitae including education, experience, skills, awards, and service.
+Edit `docs/cv.md` with your full curriculum vitae including education, experience, skills, awards, and service.
 
 ### Blog
-Edit `blog.md` to add project blog posts:
+Edit `docs/blog.md` to add project blog posts:
 ```markdown
 ## Post Title: Description
 **Date:** Month Year
@@ -65,20 +66,16 @@ Your blog post content with sections, code blocks, and images.
 ```
 
 ### Contact Information
-Edit the contact links directly in `index.html` (lines ~167-183) to update your email, GitHub, LinkedIn, and Google Scholar links.
+Edit the contact links directly in `docs/index.html` (lines ~167-183) to update your email, GitHub, LinkedIn, and Google Scholar links.
 
 ### Skills
-Edit the skills section directly in `index.html` (lines ~67-102) to customize your technical skills.
+Edit the skills section directly in `docs/index.html` (lines ~67-102) to customize your technical skills.
 
 ## Testing Locally
 
-Open `index.html` in your browser:
+Use a local server (recommended for proper markdown loading):
 ```bash
-open index.html
-```
-
-Or use a local server (recommended for proper markdown loading):
-```bash
+cd docs
 python -m http.server 8000
 # Then visit http://localhost:8000
 ```
@@ -89,14 +86,19 @@ python -m http.server 8000
 ```bash
 git add .
 git commit -m "Update portfolio content"
+git**Configure GitHub Pages to use the `/docs` folder:**
+   - Go to your repository settings on GitHub
+   - Navigate to "Pages" section
+   - Under "Source", select "Deploy from a branch"
+   - Choose "main" branch and "/docs" folder
+   - Save
+
+2. Commit your changes:
+```bash
+git add .
+git commit -m "Update portfolio content"
 git push origin main
 ```
-
-2. Enable GitHub Pages in repository settings if not already enabled
-
-3. Your site will be available at: `https://jhorder.github.io`
-
-## Features
 
 - 📝 Content managed via markdown files
 - 🎨 Modern, responsive design
